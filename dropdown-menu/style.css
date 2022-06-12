@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+/* General Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  max-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  position: relative;
+}
+
+/* Side nav bar styles */
+
+.left-section {
+  font-family: 'Poppins';
+  font-weight: bold;
+  height: 100vh;
+}
+
+.projects-btn {
+  padding: 0.7rem 1rem;
+  width: 100%;
+}
+
+.add-task-button {
+  width: 20%;
+}
+
+.projects-container {
+  display: none;
+}
+
+.show-projects-list {
+  display: block;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
