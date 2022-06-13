@@ -47,7 +47,7 @@ body {
 
 .show-projects-list {
   display: block;
-  animation: growDown 300ms ease-in-out forwards;
+  animation: growDown 150ms ease-in-out forwards;
   transform-origin: top;
 }
 
